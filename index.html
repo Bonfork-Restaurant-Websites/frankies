@@ -1,0 +1,496 @@
+<!--
+ ____   __   __ _  ____  __  ____  __ _
+(  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+ ) _ ((  O )/    / ) _)(  O ))   / )  (
+(____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A demo website for the Frankies Restaurant Template" />
+    <meta name="keywords" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frankies.bonfork.net/" />
+    <meta property="og:title" content="Frankies Restaurant" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="A demo website for the Frankies Restaurant Template" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+
+    <link rel="prefetch" href="images/eat-menu-bg.jpg">
+    <link rel="prefetch" href="images/wine.jpg">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--
+    ____   __   __ _  ____  __  ____  __ _
+    (  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+    ) _ ((  O )/    / ) _)(  O ))   / )  (
+    (____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+    -->
+    <title>Frankies Pizzeria Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="dns-prefetch" href="//use.typekit.net/">
+    <link rel="dns-prefetch" href="//use.fontawesome.com/">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/">
+
+    <link rel="stylesheet" href="https://use.typekit.net/kgr5gke.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Schema json -->
+    <script id="data" type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Restaurant",
+          "priceRange": "$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "Canada",
+            "postalCode": "M5E 1Z9",
+            "streetAddress": "12 Yonge St."
+          },
+          "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 43.643162,
+              "longitude": -79.376259
+          },
+          "name": "Deerhurst Restaurant",
+          "telephone": "+44 (0)1234 56789",
+          "url": "https://deerhurst.bonfork.net",
+          "paymentAccepted": "",
+          "description": "Deerhurst Restaurant Demo description. Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam id urna egestas ultricies nulla at viverra nibh donec sollicitudin metus sit amet est laoreet gravida donec cursus enim quis.",
+        
+          "servesCuisine": "French cuisine",
+          "hasMenu": "https://deerhurst.bonfork.net/menu",
+          "acceptsReservations": "True",
+          
+          "openingHoursSpecification": [
+              {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                      "Monday"
+                  ],
+                  "is_open": false
+              },
+              {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "11:00",
+                    "closes": "23:00",
+                    "is_open": true
+                }
+          ]
+      }
+  </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ID_PROPERTY_HERE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'ID_PROPERTY_HERE');
+    </script>
+</head>
+
+<body>
+    <div class="fixed-top main-menu">
+        <ul class="nav flex-column">
+            <li class="nav-item delay-1">
+                <a class="nav-link" href="about.html" title="About Us">About Us</a>
+            </li>
+            <li class="nav-item delay-2">
+                <a class="nav-link" href="menus.html" title="Menus">Menus</a>
+            </li>
+            <li class="nav-item delay-3">
+                <a class="nav-link" href="gallery.html" title="Gallery">Gallery</a>
+            </li>
+            <li class="nav-item delay-4" onClick="closeMenu()">
+                <a class="nav-link" href="#location" title="Contact">Contact</a>
+            </li>
+            <li class="nav-item delay-5 m-auto">
+                <a href="reservations.html" class="btn btn-book navbar-btn" title="Book Now">Book Now</a>
+            </li>
+        </ul>
+    </div>
+
+    <header id="header">
+        <nav class="navbar navbar-expand navbar-dark">
+            <div id="nav-icon1" class="d-block d-xl-none">
+                <span></span>
+                <span></span>
+            </div>
+            <a class="navbar-brand abs" href="#" title="Frankie's Pizzeria">
+                <img src="images/logo.svg" alt="Logo">
+            </a>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav d-none d-xl-flex left-menu">
+                    <li class="nav-item">
+                        <a class="nav-link left-to-right" href="about.html" title="About Us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left-to-right" href="menus.html" title="Menus">Menus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left-to-right" href="gallery.html" title="Gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left-to-right" href="#location" title="Contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item social-icon">
+                        <a class="nav-link" href="#" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item social-icon">
+                        <a class="nav-link" href="#" title="Facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-xl-block">
+                        <a href="reservations.html" class="btn btn-book navbar-btn" title="Book Now">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="banner">
+            <h1 class="wow fadeInUp">Delicious Pizza
+                <span>Everyday</span>
+            </h1>
+            <h6 class="wow fadeInUp">123 Main Street — Brooklyn, NY</h6>
+        </div>
+
+        <div class="text-center">
+            <a href="#about" title="Go Down">
+                <img src="images/header-arrow.svg" alt="Arrow" class="header-arrow wow slideInDown">
+            </a>
+        </div>
+
+        <div class="indicators d-none d-lg-block">
+            <a href="#header">
+                <div class="dot active"></div>
+            </a>
+            <a href="#about">
+                <div class="dot"></div>
+            </a>
+            <a href="#menus">
+                <div class="dot"></div>
+            </a>
+            <a href="#opening-hours">
+                <div class="dot"></div>
+            </a>
+            <a href="#location">
+                <div class="dot"></div>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="about" id="about">
+        <div class="container">
+            <h2 class="rellax" data-rellax-speed="0.8">Time, dedication and craft.
+                <span>Always.</span>
+            </h2>
+            <div class="row">
+                <div class="col-lg-6 text-lg-right mb-5">
+                    <img src="images/pizza.jpg" alt="Pizza" class="img-fluid mb-4 rellax" data-rellax-speed="0.8">
+                    <img src="images/pizzaiolo.jpg" alt="Pizzaiolo" class="img-fluid rellax" data-rellax-speed="0.4">
+                </div>
+                <div class="col-lg-6">
+                    <h6>From the smallest batch to the biggest, we give every piece of our pasta the time and attention it needs
+                        to make sure every detail is just right.</h6>
+                    <p>From the smallest batch to the biggest, we give every piece of our pasta the time and attention it needs
+                        to make sure every detail is just right. From the smallest batch to the biggest, we give every piece
+                        of our pasta the time and attention it needs to make sure every detail is just right.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="menus" id="menus">
+        <div class="row no-gutters">
+            <div class="col-md-6 text-center wow fadeInLeft" id="eat">
+                <h2 id="eat-title">Eat</h2>
+                <div id="eat-content">
+                    <p>From the smallest batch to the biggest, we give every piece of our pasta.</p>
+                    <button class="btn btn-view">
+                        <a href="menus.html#eat-menu">View Menu</a>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 text-center wow fadeInRight" id="drink">
+                <h2 id="drink-title">Drink</h2>
+                <div id="drink-content">
+                    <p>From the smallest batch to the biggest, we give every piece of our pasta.</p>
+                    <button class="btn btn-view">
+                        <a href="menus.html#drink-menu">View Menu</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="images/wine.jpg" alt="Wine" class="img-fluid" id="second-bg-image">
+    </div>
+
+
+    <div class="opening-hours" id="opening-hours">
+        <div class="container">
+            <h1 class="text-center">Opening Hours</h1>
+            <div class="hr-line"></div>
+            <div class="opening-hours-container">
+            </div>
+        </div>
+    </div>
+
+    <div class="location" id="location">
+        <div class="row no-gutters">
+            <div class="col-md-6 left-side">
+                <h2>Location</h2>
+                <div class="hr-line"></div>
+                <h6>123 Fake Street — Brooklyn, NY — 206-555-7890
+                    <br>
+                    <a href="mailto:example@example.com" title="example@example.com">example@example.com</a>
+                </h6>
+                <a href="reservations.html" class="btn-book">Book Now</a>
+            </div>
+            <div class="col-md-6 right-side">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <h2>Subscribe</h2>
+            <div class="hr-line"></div>
+            <p>Sign up with your email address to receive the latest information about Pizzas, delicious happenings and all
+                things from Frankie’s Pizza</p>
+            <form id="subscribe-form" method="POST">
+                <div class="input-group">
+                    <input type="email" name="email" class="form-control" placeholder="Your email here..." aria-label="Your email here..." aria-describedby="basic-addon"
+                        required>
+                    <div class="input-group-append">
+                        <button type="submit" class="arrow-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+            <div class="alert alert-success alert-contact" role="alert" >
+                You have been subscribed to our newsletter!
+            </div>
+            <div class="alert alert-danger alert-contact-error" role="alert" >
+                Something went wrong!
+            </div>
+            <div class="social-media">
+                <a href="#" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" title="Facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+            <hr>
+            <h6>Restaurant website by
+                <a href="https://bonfork.com/" title="Bonfork" target="_blank">Bonfork</a>
+            </h6>
+            <a href="privacy-policy.html" class="privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script>
+        // Rellax Config
+        var rellax = new Rellax('.rellax');
+
+        // WOW Configuration
+        new WOW().init();
+
+        // Smooth Scroll
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800
+        });
+
+        // Close Menu on Contact click
+        function closeMenu() {
+            $('body').removeClass('nav-open');
+            $('#nav-icon1').removeClass('open');
+        }
+
+        // Google Map
+        function initMap() {
+            var location = { lat: 43.643160, lng: -79.376260 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location,
+                styles: [
+                    {
+                        "featureType": "administrative",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "color": "#f2f2f2"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 45
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "color": "#bfbfbf"
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    }
+                ]
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                icon: 'images/map-marker.png'
+            })
+        }
+
+        // Change Our Menus bg image on hover
+        document.getElementById("eat").addEventListener("mouseover", mouseOverFunctionEat);
+        document.getElementById("drink").addEventListener("mouseover", mouseOverFunctionDrink);
+        document.getElementById("eat").addEventListener("mouseleave", mouseLeaveFunctionEat);
+        document.getElementById("drink").addEventListener("mouseleave", mouseLeaveFunctionDrink);
+
+        function mouseOverFunctionEat() {
+            document.querySelector('#eat-title').style.animation = 'moveUp .8s ease forwards';
+            document.querySelector('#eat-content').style.animation = 'fadeIn .8s ease forwards';
+        }
+
+        function mouseOverFunctionDrink() {
+            document.querySelector('#second-bg-image').style.opacity = "1";
+            document.querySelector('#drink-title').style.animation = 'moveUp .8s ease forwards';
+            document.querySelector('#drink-content').style.animation = 'fadeIn .8s ease forwards';
+        }
+
+        function mouseLeaveFunctionEat() {
+            document.querySelector('#eat-title').style.animation = 'moveDown .8s ease forwards';
+            document.querySelector('#eat-content').style.animation = 'fadeOut .8s ease forwards';
+        }
+
+        function mouseLeaveFunctionDrink() {
+            document.querySelector('#second-bg-image').style.opacity = "0";
+            document.querySelector('#drink-title').style.animation = 'moveDown .8s ease forwards';
+            document.querySelector('#drink-content').style.animation = 'fadeOut .8s ease forwards';
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async
+        defer></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/subscribe.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

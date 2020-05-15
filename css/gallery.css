@@ -1,0 +1,416 @@
+@font-face {
+	src: url(../fonts/SharpGroteskSmBold10.ttf);
+	font-family: sharp-grotesk;
+}
+
+body {
+    background: black;
+}
+
+.main-menu {
+	width: 100%;
+	height: 100vh;
+	opacity: 0;
+    visibility: hidden;
+    padding: 155px 0 100px;
+}
+
+.nav-open .main-menu {
+	opacity: 1;
+	visibility: visible;
+	background: #D56F3E;
+}
+
+.nav-open {
+	overflow: hidden;
+}
+
+.nav-open .main-menu {
+    overflow-y: auto;
+}
+
+.main-menu .nav li a {
+	color: white;
+    font-size: 90px;
+    line-height: 80px;
+	font-family: "sharp-grotesk", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.main-menu .nav li {
+	opacity: 0;
+	-webkit-transform: translateY(-40px);
+	transform: translateY(-40px);
+	-webkit-animation-timing-function: cubic-bezier(.45, .005, 0, 1);
+	-moz-animation-timing-function: cubic-bezier(.45, .005, 0, 1);
+	-o-animation-timing-function: cubic-bezier(.45, .005, 0, 1);
+	animation-timing-function: cubic-bezier(.45, .005, 0, 1);
+}
+
+.nav-open .main-menu .nav li {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition: -webkit-transform .2s, opacity .2s;
+	transition: transform .2s, opacity .2s;
+}
+
+.main-menu .nav li.delay-1 {
+	-webkit-transition-delay: 0.1s;
+	-moz-transition-delay: 0.1s;
+	-ms-transition-delay: 0.1s;
+	-o-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.main-menu .nav li.delay-2 {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-ms-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.main-menu .nav li.delay-3 {
+	-webkit-transition-delay: 0.3s;
+	-moz-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.main-menu .nav li.delay-4 {
+	-webkit-transition-delay: 0.4s;
+	-moz-transition-delay: 0.4s;
+	-ms-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.main-menu .nav li.delay-5 {
+	-webkit-transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-ms-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.navbar {
+    background: transparent !important;
+    padding: 30px 15px 0 15px;
+}
+
+#nav-icon1 {
+    width: 30px;
+    height: 12px;
+    position: relative;
+    z-index: 1111;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+  
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+  
+#nav-icon1 span:nth-child(1) {
+    top: 0px;
+}
+  
+#nav-icon1 span:nth-child(2) {
+    top: 9px;
+}
+  
+#nav-icon1.open span:nth-child(1) {
+    top: 3px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+  
+#nav-icon1.open span:nth-child(2) {
+    top: 3px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.navbar-brand {
+    z-index: 1111;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}  
+
+.navbar .left-menu .nav-link {
+    margin-right: 30px;
+}
+
+.navbar .nav-link {
+    font-size: 24px;
+    line-height: 31px;
+    color: white !important;
+    letter-spacing: 1px;
+    font-family: "sharp-grotesk", sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar .btn-book, .main-menu .btn-book {
+    display: table-cell;
+    vertical-align: middle;
+    width: 160px;
+    height: 66px;
+    padding-top: 12px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0px;
+    font-size: 24px !important;
+    line-height: 31px !important;
+    color: white !important;
+    letter-spacing: 1px;
+    font-family: "sharp-grotesk", sans-serif;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+.navbar .btn-book:hover, .main-menu .btn-book:hover {
+    background-color: white;
+    color: black !important;
+}
+
+.navbar .social-icon {
+    margin-top: 10px;
+    z-index: 1111;
+}
+
+.left-to-right {
+    position: relative;
+}
+
+.left-to-right:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 1px solid white;
+    transition: 0.4s ease-in-out;
+}
+
+.left-to-right:hover:after {
+    width: 100%;
+}
+
+.left-to-right:after {
+    border-bottom: 2px solid white;
+}
+
+.navbar .social-icon a i {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.navbar .social-icon a:hover i {
+    color:#242424;
+}
+
+header {
+    background-color: #D56F3E;
+    min-height: 360px;
+}
+
+
+/* Content */
+.content {
+    color: white;
+    padding-bottom: 152px;
+}
+
+.content h1 {
+    margin-bottom: 0px;
+    margin-top: -15%;
+    font-size: 280px;
+    line-height: 357px;
+    text-transform: uppercase;
+    font-family: "sharp-grotesk", sans-serif;
+}
+
+/* Footer */
+footer {
+    background-color: #242424;
+    padding: 80px 0 58px 0;
+    color: white;
+}
+
+footer h2 {
+    font-size: 120px;
+    line-height: 100px;
+    font-family: "sharp-grotesk", sans-serif;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 300;
+    max-width: 460px;
+    margin: 34px auto;
+}
+
+footer .input-group {
+    max-width: 340px;
+    margin: 0 auto;
+    border: 1px solid #3b3b3b;
+    padding: 15px;
+}
+
+footer input {
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+footer input:focus {
+	outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+footer input,
+footer input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 30px;
+	font-family: "neue-haas-unica", sans-serif;
+}
+
+footer input {
+    color: white !important;
+}
+
+footer input::-webkit-input-placeholder {
+    color: white;
+    opacity: 50%;
+}
+
+footer .arrow-btn {
+    background-color: transparent;
+    border: none;
+}
+
+footer .arrow-btn i {
+    color: #D56F3E;
+}
+
+footer .social-media {
+    margin: 41px 0 120px 0;
+}
+
+footer .social-media a {
+    text-decoration: none !important;
+}
+
+footer .social-media i {
+    width: 47px;
+    height: 47px;
+    border: 1px solid #3b3b3b;
+    border-radius: 50%;
+    padding-top:15px;
+    color: white;
+    font-size: 17px;
+    margin: 0 5px;
+    transition: all .2s ease-in-out;
+}
+
+footer .social-media a:hover i {
+    background: #D56F3E;
+}
+
+footer hr {
+    background-color: #3b3b3b;
+}
+
+footer h6 {
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "neue-haas-unica", sans-serif;
+    margin-top: 57px;
+    font-weight: 300;
+}
+
+footer h6 a {
+    color: white !important;
+    font-weight: bold;
+}
+
+footer .privacy {
+    font-family: "neue-haas-unica", sans-serif;
+    color: white !important;
+    font-size: 14px;
+}
+
+footer .alert {
+    max-width: 370px;
+    margin: 20px auto;
+    display: none;
+}
+
+/* Media Queries*/
+@media (max-width: 576px) {
+    .content h1 {
+        margin-top: -40%;
+        font-size: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery img {
+        width: 90% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 50px 78px 0 78px;
+    }
+    .navbar .social-icon:nth-child(2) {
+        margin-right: 40px;
+    }
+    .navbar .social-icon a i {
+        font-size: 25px;
+    }
+    .content h1 {
+        margin-bottom: 153px;
+    }
+    footer {
+        padding: 220px 0 80px 0;
+    }
+    footer .social-media {
+        margin: 51px 0 188px 0;
+    }
+}  

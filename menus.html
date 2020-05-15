@@ -1,0 +1,593 @@
+<!--
+ ____   __   __ _  ____  __  ____  __ _
+(  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+ ) _ ((  O )/    / ) _)(  O ))   / )  (
+(____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A demo website for the Frankies Restaurant Template" />
+    <meta name="keywords" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frankies.bonfork.net/" />
+    <meta property="og:title" content="Frankies Restaurant" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="A demo website for the Frankies Restaurant Template" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--
+    ____   __   __ _  ____  __  ____  __ _
+    (  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+    ) _ ((  O )/    / ) _)(  O ))   / )  (
+    (____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+    -->
+    <title>Menus | Frankies Pizzeria Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="css/menus.css">
+
+    <link rel="dns-prefetch" href="//use.typekit.net/">
+    <link rel="dns-prefetch" href="//use.fontawesome.com/">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/">
+
+    <link rel="stylesheet" href="https://use.typekit.net/kgr5gke.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ID_PROPERTY_HERE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'ID_PROPERTY_HERE');
+    </script>
+
+
+    <!-- Schema json -->
+    <script id="data" type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Restaurant",
+          "priceRange": "$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "Canada",
+            "postalCode": "M5E 1Z9",
+            "streetAddress": "12 Yonge St."
+          },
+          "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 43.643162,
+              "longitude": -79.376259
+          },
+          "name": "Frankies Restaurant",
+          "telephone": "+44 (0)1234 56789",
+          "url": "https://frankies.bonfork.net",
+          "paymentAccepted": "",
+          "description": "Frankies Restaurant Demo description. Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam id urna egestas ultricies nulla at viverra nibh donec sollicitudin metus sit amet est laoreet gravida donec cursus enim quis.",
+        
+          "servesCuisine": "French cuisine",
+          "hasMenu": "https://frankies.bonfork.net/menu",
+          "acceptsReservations": "True",
+          
+          "openingHoursSpecification": [
+              {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday",
+                      "Sunday"
+                  ],
+                  "opens": "11:00",
+                  "closes": "23:00"
+              }
+          ],
+
+          {
+            "hasOfferCatalog":{
+               "@type":"OfferCatalog",
+               "name":"Menu",
+               "itemListElement":[
+                  {
+                     "@type":"OfferCatalog",
+                     "name":"Main Menu",
+                     "itemListElement":[
+                        {
+                           "@type":"OfferCatalog",
+                           "name":"Eat",
+                           "itemListElement":[
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"$",
+                                 "price":8,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"CAPRICIOSSA",
+                                    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia ac venenatis augue.",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"$",
+                                 "price":9,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"DIAVOLA",
+                                    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia ac venenatis augue.",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"$",
+                                 "price":8.50,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"CARNE",
+                                    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia ac venenatis augue.",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                "@type":"Offer",
+                                "priceCurrency":"$",
+                                "price":8.50,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"TONNO",
+                                   "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia ac venenatis augue.",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"$",
+                                "price":9,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"DORADO",
+                                   "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia ac venenatis augue.",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"$",
+                                "price":7.5,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"GREEK",
+                                   "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia ac venenatis augue.",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                           ]
+                        },
+                        {
+                           "@type":"OfferCatalog",
+                           "name":"Drink",
+                           "itemListElement":[
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"$",
+                                 "price":8,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"BEER",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"$",
+                                 "price":9,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"WINE",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                 "@type":"Offer",
+                                 "priceCurrency":"$",
+                                 "price":8.5,
+                                 "itemOffered":{
+                                    "@type":"MenuItem",
+                                    "name":"COCKTAILS",
+                                    "description":"",
+                                    "image":[
+                                       ""
+                                    ],
+                                    "nutrition":{
+                                       "@type":"NutritionInformation",
+                                       "calories":""
+                                    }
+                                 }
+                              },
+                              {
+                                "@type":"Offer",
+                                "priceCurrency":"$",
+                                "price":8.5,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"CHAMPAGNE",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"$",
+                                "price":9,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"SOFT DRINKS",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"$",
+                                "price":7.5,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"FRUIT JUICE",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"$",
+                                "price":8,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"STILL WATER",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             },
+                             {
+                                "@type":"Offer",
+                                "priceCurrency":"$",
+                                "price":10,
+                                "itemOffered":{
+                                   "@type":"MenuItem",
+                                   "name":"SPARKLING WATER",
+                                   "description":"",
+                                   "image":[
+                                      ""
+                                   ],
+                                   "nutrition":{
+                                      "@type":"NutritionInformation",
+                                      "calories":""
+                                   }
+                                }
+                             }
+                           ]
+                        },
+                     ]
+                  }
+               ]
+            }
+         }
+      }
+  </script>
+</head>
+
+<body>
+    <div class="fixed-top main-menu">
+        <ul class="nav flex-column">
+            <li class="nav-item delay-1">
+                <a class="nav-link" href="about.html" title="About Us">About Us</a>
+            </li>
+            <li class="nav-item delay-2">
+                <a class="nav-link" href="menus.html" title="Menus">Menus</a>
+            </li>
+            <li class="nav-item delay-3">
+                <a class="nav-link" href="gallery.html" title="Gallery">Gallery</a>
+            </li>
+            <li class="nav-item delay-4">
+                <a class="nav-link" href="index.html#location" title="Contact">Contact</a>
+            </li>
+            <li class="nav-item delay-5 m-auto">
+                <a href="reservations.html" class="btn btn-book navbar-btn" title="Book Now">Book Now</a>
+            </li>
+        </ul>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand navbar-dark">
+            <div id="nav-icon1" class="d-block d-xl-none">
+                <span></span>
+                <span></span>
+            </div>
+            <a class="navbar-brand abs" href="index.html" title="Frankie's Pizzeria">
+                <img src="images/logo.svg" alt="Logo">
+            </a>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav d-none d-xl-flex left-menu">
+                    <li class="nav-item">
+                        <a class="nav-link left-to-right" href="about.html" title="About Us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left-to-right" href="menus.html" title="Menus">Menus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left-to-right" href="gallery.html" title="Gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link left-to-right" href="index.html#location" title="Contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item social-icon">
+                        <a class="nav-link" href="#" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item social-icon">
+                        <a class="nav-link" href="#" title="Facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-xl-block">
+                        <a href="reservations.html" class="btn btn-book navbar-btn" title="Book Now">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="content">
+        <div class="container">
+            <h1 class="text-center">Menus</h1>
+            <div class="eat-container" id="eat-menu">
+                <h2 class="text-center">Eat</h2>
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <h6>Capriciossa</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>8</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia
+                        ac venenatis augue. </p>
+                    <div class="menu-item">
+                        <h6>Diavola</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>9</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia
+                        ac venenatis augue. </p>
+                    <div class="menu-item">
+                        <h6>Carne</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>8.5</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia
+                        ac venenatis augue. </p>
+                    <div class="menu-item">
+                        <h6>Tonno</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>8.5</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia
+                        ac venenatis augue. </p>
+                    <div class="menu-item">
+                        <h6>Dorado</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>9</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia
+                        ac venenatis augue. </p>
+                    <div class="menu-item">
+                        <h6>Greek</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>7.5</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec ac nisl scelerisque ante tincidunt lacinia
+                        ac venenatis augue. </p>
+                </div>
+            </div>
+
+            <div class="drink-container" id="drink-menu">
+                <h2 class="text-center">Drink</h2>
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <h6>Beer</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>8</h6>
+                    </div>
+                    <div class="menu-item">
+                        <h6>Wine</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>9</h6>
+                    </div>
+                    <div class="menu-item">
+                        <h6>Cocktails</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>8.5</h6>
+                    </div>
+                    <div class="menu-item">
+                        <h6>Champagne</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>8.5</h6>
+                    </div>
+                    <div class="menu-item">
+                        <h6>Soft Drinks</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>9</h6>
+                    </div>
+                    <div class="menu-item">
+                        <h6>Fruit Juice</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>7.5</h6>
+                    </div>
+                    <div class="menu-item">
+                        <h6>Still Water</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>8</h6>
+                    </div>
+                    <div class="menu-item">
+                        <h6>Sparkling Water</h6>
+                        <div class="hr-dashed"></div>
+                        <h6>10</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-center">
+        <div class="container">
+            <h2>Subscribe</h2>
+            <div class="hr-line"></div>
+            <p>Sign up with your email address to receive the latest information about Pizzas, delicious happenings and all
+                things from Frankie’s Pizza</p>
+            <form id="subscribe-form" method="POST">
+                <div class="input-group">
+                    <input type="email" name="email" class="form-control" placeholder="Your email here..." aria-label="Your email here..." aria-describedby="basic-addon"
+                        required>
+                    <div class="input-group-append">
+                        <button type="submit" class="arrow-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                         </form>
+                         <div class="alert alert-success alert-contact" role="alert" >
+                            You have been subscribed to our newsletter!
+                        </div>
+                        <div class="alert alert-danger alert-contact-error" role="alert" >
+                            Something went wrong!
+                        </div>
+            <div class="social-media">
+                <a href="#" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" title="Facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+            <hr>
+            <h6>Restaurant website by
+                <a href="https://bonfork.com/" title="Bonfork" target="_blank">Bonfork</a>
+            </h6>
+            <a href="privacy-policy.html" class="privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/subscribe.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
