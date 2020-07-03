@@ -1,3 +1,6 @@
+# Frankies, a free restaurant template
+Demo https://frankies.bonfork.net/
+
 # How to get Google API key for maps?
 
 To get an API key:
